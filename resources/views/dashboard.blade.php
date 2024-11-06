@@ -12,27 +12,27 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                            <label class="btn btn-sm btn-primary btn-simple active" id="0">
-                                <input type="radio" name="options" checked>
-                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Accounts</span>
-                                <span class="d-block d-sm-none">
-                                    <i class="tim-icons icon-single-02"></i>
-                                </span>
-                            </label>
-                            <label class="btn btn-sm btn-primary btn-simple" id="1">
-                                <input type="radio" class="d-none d-sm-none" name="options">
-                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Purchases</span>
-                                <span class="d-block d-sm-none">
-                                    <i class="tim-icons icon-gift-2"></i>
-                                </span>
-                            </label>
-                            <label class="btn btn-sm btn-primary btn-simple" id="2">
-                                <input type="radio" class="d-none" name="options">
-                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Sessions</span>
-                                <span class="d-block d-sm-none">
-                                    <i class="tim-icons icon-tap-02"></i>
-                                </span>
-                            </label>
+                                <label class="btn btn-sm btn-primary btn-simple active" id="0">
+                                    <input type="radio" name="options" checked>
+                                    <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Accounts</span>
+                                    <span class="d-block d-sm-none">
+                                        <i class="tim-icons icon-single-02"></i>
+                                    </span>
+                                </label>
+                                <label class="btn btn-sm btn-primary btn-simple" id="1">
+                                    <input type="radio" class="d-none d-sm-none" name="options">
+                                    <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Purchases</span>
+                                    <span class="d-block d-sm-none">
+                                        <i class="tim-icons icon-gift-2"></i>
+                                    </span>
+                                </label>
+                                <label class="btn btn-sm btn-primary btn-simple" id="2">
+                                    <input type="radio" class="d-none" name="options">
+                                    <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Sessions</span>
+                                    <span class="d-block d-sm-none">
+                                        <i class="tim-icons icon-tap-02"></i>
+                                    </span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -123,7 +123,8 @@
                                         <p class="text-muted">Dwuamish Head, Seattle, WA 8:47 AM</p>
                                     </td>
                                     <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
+                                        <button type="button" rel="tooltip" title="" class="btn btn-link"
+                                            data-original-title="Edit Task">
                                             <i class="tim-icons icon-pencil"></i>
                                         </button>
                                     </td>
@@ -132,7 +133,8 @@
                                     <td>
                                         <div class="form-check">
                                             <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="" checked="">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    checked="">
                                                 <span class="form-check-sign">
                                                     <span class="check"></span>
                                                 </span>
@@ -141,10 +143,13 @@
                                     </td>
                                     <td>
                                         <p class="title">GDPR Compliance</p>
-                                        <p class="text-muted">The GDPR is a regulation that requires businesses to protect the personal data and privacy of Europe citizens for transactions that occur within EU member states.</p>
+                                        <p class="text-muted">The GDPR is a regulation that requires businesses to protect
+                                            the personal data and privacy of Europe citizens for transactions that occur
+                                            within EU member states.</p>
                                     </td>
                                     <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
+                                        <button type="button" rel="tooltip" title="" class="btn btn-link"
+                                            data-original-title="Edit Task">
                                             <i class="tim-icons icon-pencil"></i>
                                         </button>
                                     </td>
@@ -154,18 +159,20 @@
                                         <div class="form-check">
                                             <label class="form-check-label">
                                                 <input class="form-check-input" type="checkbox" value="">
-                                                    <span class="form-check-sign">
-                                                        <span class="check"></span>
-                                                    </span>
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
                                             </label>
                                         </div>
                                     </td>
                                     <td>
                                         <p class="title">Solve the issues</p>
-                                        <p class="text-muted">Fifty percent of all respondents said they would be more likely to shop at a company </p>
+                                        <p class="text-muted">Fifty percent of all respondents said they would be more
+                                            likely to shop at a company </p>
                                     </td>
                                     <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
+                                        <button type="button" rel="tooltip" title="" class="btn btn-link"
+                                            data-original-title="Edit Task">
                                             <i class="tim-icons icon-pencil"></i>
                                         </button>
                                     </td>
@@ -186,7 +193,8 @@
                                         <p class="text-muted">Ra Ave SW, Seattle, WA 98116, SUA 11:19 AM</p>
                                     </td>
                                     <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
+                                        <button type="button" rel="tooltip" title="" class="btn btn-link"
+                                            data-original-title="Edit Task">
                                             <i class="tim-icons icon-pencil"></i>
                                         </button>
                                     </td>
@@ -204,10 +212,12 @@
                                     </td>
                                     <td>
                                         <p class="title">Export the processed files</p>
-                                        <p class="text-muted">The report also shows that consumers will not easily forgive a company once a breach exposing their personal data occurs. </p>
+                                        <p class="text-muted">The report also shows that consumers will not easily forgive
+                                            a company once a breach exposing their personal data occurs. </p>
                                     </td>
                                     <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
+                                        <button type="button" rel="tooltip" title="" class="btn btn-link"
+                                            data-original-title="Edit Task">
                                             <i class="tim-icons icon-pencil"></i>
                                         </button>
                                     </td>
@@ -228,7 +238,8 @@
                                         <p class="text-muted">Capitol Hill, Seattle, WA 12:34 AM</p>
                                     </td>
                                     <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
+                                        <button type="button" rel="tooltip" title="" class="btn btn-link"
+                                            data-original-title="Edit Task">
                                             <i class="tim-icons icon-pencil"></i>
                                         </button>
                                     </td>
@@ -266,16 +277,16 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                      Dakota Rice
+                                        Dakota Rice
                                     </td>
                                     <td>
-                                      Niger
+                                        Niger
                                     </td>
                                     <td>
-                                      Oud-Turnhout
+                                        Oud-Turnhout
                                     </td>
                                     <td class="text-center">
-                                      $36,738
+                                        $36,738
                                     </td>
                                 </tr>
                                 <tr>
@@ -372,10 +383,11 @@
 @endsection
 
 @push('js')
-    <script src="{{ asset('black') }}/js/plugins/chartjs.min.js"></script>
+    <!-- Use the path relative to public -->
+    <script src="{{ asset('js/plugins/chartjs.min.js') }}"></script>
     <script>
         $(document).ready(function() {
-          demo.initDashboardPageCharts();
+            demo.initDashboardPageCharts();
         });
     </script>
 @endpush

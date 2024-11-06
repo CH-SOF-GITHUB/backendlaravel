@@ -25,3 +25,7 @@ Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
 
 // Route to handle logout
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('/reset', function(){
+    return view('auth.reset'); // Make sure you have a view for password reset
+})->name('password.request');
