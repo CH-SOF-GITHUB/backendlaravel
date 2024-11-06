@@ -43,10 +43,10 @@
                     <img class="card-img" src="{{ asset('/img/card-primary.png') }}" alt="Card image">
                     <h4 class="card-title">{{ __('Register') }}</h4>
                 </div>
-                <form class="form" method="post" action="{{ route('register') }}">
+                <form class="form" method="post" action="{{ route('register.submit') }}">
                     @csrf
-
                     <div class="card-body">
+                        <!-- Name Input -->
                         <div class="input-group{{ $errors->has('name') ? ' has-danger' : '' }}">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
@@ -56,6 +56,8 @@
                             <input type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Name') }}">
                             @include('alerts.feedback', ['field' => 'name'])
                         </div>
+
+                        <!-- Email Input -->
                         <div class="input-group{{ $errors->has('email') ? ' has-danger' : '' }}">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
@@ -65,6 +67,8 @@
                             <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('Email') }}">
                             @include('alerts.feedback', ['field' => 'email'])
                         </div>
+
+                        <!-- Password Input -->
                         <div class="input-group{{ $errors->has('password') ? ' has-danger' : '' }}">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
@@ -74,6 +78,8 @@
                             <input type="password" name="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ __('Password') }}">
                             @include('alerts.feedback', ['field' => 'password'])
                         </div>
+
+                        <!-- Confirm Password Input -->
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
@@ -82,19 +88,22 @@
                             </div>
                             <input type="password" name="password_confirmation" class="form-control" placeholder="{{ __('Confirm Password') }}">
                         </div>
+
+                        <!-- Terms Checkbox -->
                         <div class="form-check text-left">
                             <label class="form-check-label">
                                 <input class="form-check-input" type="checkbox">
                                 <span class="form-check-sign"></span>
-                                {{ __('I agree to the') }}
-                                <a href="#">{{ __('terms and conditions') }}</a>.
+                                {{ __('I agree to the') }} <a href="#">{{ __('terms and conditions') }}</a>.
                             </label>
                         </div>
                     </div>
+                    <!-- Submit Button -->
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary btn-round btn-lg">{{ __('Get Started') }}</button>
                     </div>
                 </form>
+
             </div>
         </div>
     </div>

@@ -23,10 +23,15 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        return response()->json([
-            'message' => 'User registered successfully',
-            'user' => $user
-        ], 201);
+        // Check if the request is an API call
+        if ($request->wantsJson()) {
+            return response()->json([
+                'message' => 'User registered successfully',
+                'user' => $user
+            ], 201);
+        }
+        // Redirect to the login page with a success message for web requests
+        return redirect()->route('login')->with('message', 'Inscription réussie, veuillez vous connecter.');
     }
 
     public function login(Request $request)
@@ -45,16 +50,24 @@ class AuthController extends Controller
         $user = auth()->user();
         $token = $user->createToken('token-name')->plainTextToken;
 
-        return response()->json([
-            'message' => 'Login successful',
-            'token' => $token
-        ], 200);
+        if ($request->wantsJson()) {
+            return response()->json([
+                'message' => 'Login successful',
+                'token' => $token
+            ], 200);
+        }
+
+        return redirect()->route('dashboard')->with('message', 'Connexion réussie.');
     }
 
     public function logout(Request $request)
     {
-        auth()->user()->tokens()->delete();
+        auth()->logout();
 
-        return response()->json(['message' => 'Logged out successfully'], 200);
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect()->route('login')->with('message', 'You have been logged out.');
     }
+
 }

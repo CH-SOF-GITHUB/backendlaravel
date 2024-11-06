@@ -13,19 +13,19 @@ Route::get('/register', function () {
 })->name('register');
 
 // Route to handle registration form submission
-Route::post('/register', [AuthController::class, 'register'])->name('register.submit');
+//Route::post('/register', [AuthController::class, 'register'])->name('register.submit');
 
 // Route for login (show form)
 Route::get('/login', function () {
     return view('auth.login'); // Make sure you have a view for login
 })->name('login');
 
-// Route to handle login form submission
-Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
+// Route for dashboard (show form)
+Route::get('/dashboard', function () {
+    return view('dashboard'); // Make sure you have a view for login
+})->name('dashboard');
 
-// Route to handle logout
-Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
-
+// Route for reset password (show form)
 Route::get('/reset', function(){
     return view('auth.reset'); // Make sure you have a view for password reset
 })->name('password.request');
