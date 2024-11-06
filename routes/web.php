@@ -22,8 +22,8 @@ Route::get('/login', function () {
 
 // Route for dashboard (show form)
 Route::get('/dashboard', function () {
-    return view('dashboard'); // Make sure you have a view for login
-})->name('dashboard');
+    return view('dashboard');
+})->name('dashboard')->middleware('auth:sanctum');
 
 // Route for reset password (show form)
 Route::get('/reset', function(){

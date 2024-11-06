@@ -49,14 +49,14 @@ class AuthController extends Controller
 
         $user = auth()->user();
         $token = $user->createToken('token-name')->plainTextToken;
-
+        /*
         if ($request->wantsJson()) {
             return response()->json([
                 'message' => 'Login successful',
                 'token' => $token
             ], 200);
         }
-
+        */
         return redirect()->route('dashboard')->with('message', 'Connexion réussie.');
     }
 

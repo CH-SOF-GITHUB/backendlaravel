@@ -10,7 +10,9 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::post('/register', [AuthController::class, 'register'])->name('register.submit');
-Route::post('/login', [AuthController::class, 'login'])->name('login.submit');;
+
+Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
+
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth:sanctum');
 
-Route::middleware('auth:sanctum')->get('/users', [UserController::class, 'getAllUsers']);
+Route::get('/users', [UserController::class, 'getAllUsers'])->middleware('auth:sanctum');

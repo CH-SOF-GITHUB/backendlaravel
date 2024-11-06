@@ -26,7 +26,7 @@
 
 <body class="{{ $class ?? '' }}">
     @auth
-        @if
+    <!-- Navbar -->
         <div class="wrapper">
             @include('layouts.navbars.sidebar')
             <div class="main-panel">
